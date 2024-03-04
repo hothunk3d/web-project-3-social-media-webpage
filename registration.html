@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+legend {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[list=country]{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email]{
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #373e57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #373e49;
+}
+.welcome {
+	display: inline-block;
+	background-color: #151728;
+	width: 100%;
+	border-radius: 5px;
+	padding: 40px;
+	margin-bottom: 2.5px;
+	text-align: center;
+}
+
+.login {
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #373e49;
+
+}
+
+.reg {
+	width: 100%;
+	border-radius: 5px;
+    background-color: #151728;
+    padding: 40px;
+    margin-right: 0.25%;
+}
+
+.log {
+	width: 100%;
+	border-radius: 5px;
+    background-color: #151728;
+    padding: 40px;
+    padding-top: 120px;
+}
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Registration</title>
+</head>
+<body>
+	<div class="welcome">
+		<h1>WELCOME TO KUMBACHAT</h1>
+	</div>
+<div class="login">
+	<div class="reg">
+		<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+			<legend>Registration</legend>
+			   Name: <br>
+			   <input type="text" name="fname" placeholder="First Name"> <br>
+			Surname: <br>
+			<input type="text" name="sname" placeholder="Last Name"> <br>
+			Country: <br>
+			<input list="country" placeholder="Select your Country">
+			<datalist id="country">
+				<option value="Nigeria">
+				<option value="United States">
+			</datalist> <br>
+			Email: <br>
+			<input type="email" name="email" placeholder="example@email.com"><br>
+			User password:<br>
+	  		<input type="password" name="psw" placeholder="Password"> <br>
+	  		<input type="password" class="rep-psw" name="psw" placeholder="Retype Password"> <br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div class="log">
+		<legend>Login</legend>
+		Email: <br>
+		<input type="email" name="email" placeholder="example@email.com"><br>
+		Password: <br>
+		<input type="password" name="psw-login" placeholder="Password">
+	</div>
+</div>
+</body>
+</html>
